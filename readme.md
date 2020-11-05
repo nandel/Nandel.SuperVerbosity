@@ -2,6 +2,6 @@
 
 Few extensions methods that enhance verbosity of some code you see everywhere
 
-# Why?
+## Why?
 
 I was bored
