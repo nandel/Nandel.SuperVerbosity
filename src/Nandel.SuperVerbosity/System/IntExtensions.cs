@@ -1,4 +1,6 @@
-﻿namespace System
+﻿using System;
+
+namespace Nandel.SuperVerbosity
 {
     public static class IntExtensions
     {
@@ -35,7 +37,7 @@
 
             var boundary = (int) Math.Floor(Math.Sqrt(value));
 
-            for (int i = 3; i <= boundary; i += 2)
+            for (var i = 3; i <= boundary; i += 2)
                 if (value % i == 0)
                     return false;
 
@@ -43,13 +45,13 @@
         }
 
         /// <summary>
-        /// Realy lazy to write value >= 0
+        /// Realy lazy to write value > 0
         /// </summary>
         /// <param name="value"></param>
         /// <returns></returns>
         public static bool IsPositive(this int value)
         {
-            return value >= 0;
+            return value > 0;
         }
 
         /// <summary>

@@ -1,7 +1,5 @@
-﻿using System;
+﻿using Shouldly;
 using System.Collections.Generic;
-using System.Text;
-using Shouldly;
 using Xunit;
 
 namespace Nandel.SuperVerbosity.Tests.System.Collections.Generic

@@ -1,6 +1,8 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
-namespace System.Collections.Generic
+namespace Nandel.SuperVerbosity
 {
     public static class EnumerableExtensions
     {
@@ -27,6 +29,18 @@ namespace System.Collections.Generic
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> enumerable)
         {
             return enumerable?.Any() != true;
+        }
+
+        /// <summary>
+        /// string.Join could do that for you
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="values"></param>
+        /// <param name="separator"></param>
+        /// <returns></returns>
+        public static string Join<T>(this IEnumerable<T> values, string separator)
+        {
+            return string.Join(separator, values);
         }
     }
 }

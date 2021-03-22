@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace System.Collections.Generic
+namespace Nandel.SuperVerbosity
 {
     public static class CollectionExtensions
     {
